@@ -94,6 +94,8 @@ public class Electrodomestico {
 		return peso;
 	}
 	
+	
+	
 	//OTROS METODOS
 	
 	/**
@@ -119,4 +121,12 @@ public class Electrodomestico {
 	private void precioFinal() {
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Electrodomestico [precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico="
+				+ consumoEnergetico + ", peso=" + peso + "]";
+	}
+	
+	
 }
