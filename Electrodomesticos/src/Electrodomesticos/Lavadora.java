@@ -19,6 +19,7 @@ public class Lavadora extends Electrodomestico{
 	 * Constructor por defecto
 	 */
 	public Lavadora() {
+		super();
 		this.carga = CARGA;
 	}
 	
@@ -44,10 +45,27 @@ public class Lavadora extends Electrodomestico{
 		super(precioBase, color, consumoEnergetico, peso);
 		this.carga = carga;
 	}
+
+	//METODO GETT
 	
+	public int getCarga() {
+		return carga;
+	}
+
+	public void setCarga(int carga) {
+		this.carga = carga;
+	}
+
+	//OTROS METODOS
 	
+	/**
+	 *  si tiene una carga mayor de 30 kg, aumentara el precio 50 €, sino es así no se incrementara el precio. 
+	 *  Llama al método padre y añade el código necesario. Recuerda que las condiciones que hemos visto en la 
+	 *  clase Electrodoméstico también deben afectar al precio.
+	 */
+	public void precioFinal() {
+		
+	}
 	
-	
-	
-	
+
 }

@@ -102,7 +102,7 @@ public class Electrodomestico {
 	 * @return 
 	 */
 	private void comprobarConsumoEnergetico(char letra) {
-				
+		this.consumoEnergetico = letra;
 	}
 	
 	/**
@@ -110,7 +110,7 @@ public class Electrodomestico {
 	 * @param color
 	 */
 	private void comprobarColor(String color) {
-		
+		this.color =color;
 	}
 	
 	/**
