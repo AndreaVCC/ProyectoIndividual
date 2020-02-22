@@ -1,8 +1,10 @@
 package Electrodomesticos;
 
 /**
+ * Clase que define atributos y metodos de Television, clase hija de
+ * Electrodomestico
  * 
- * @author Alumno
+ * @author Andrea Carreño
  * @version 1.0
  */
 public class Television extends Electrodomestico {
@@ -56,40 +58,60 @@ public class Television extends Electrodomestico {
 		this.sintonizadorTDT = sintonizadorTDT;
 	}
 
-	//METODO GETTERS
-	
+	// METODO GETTERS
+
 	/**
+	 * Metodo retorna el numero de pulgadas del televisor
 	 * 
-	 * @return
+	 * @return las pulgadas de la television
 	 */
 	public int getPulgadas() {
 		return pulgadas;
 	}
 
 	/**
+	 * Metodo retorna true o false en caso de que posea o no sintonizadorTDT
 	 * 
-	 * @return
+	 * @return sintonizadorTDT
 	 */
 	public boolean getSintonizadorTDT() {
 		return sintonizadorTDT;
 	}
-	
-	//OTROS METODOS
-	
+
+	// OTROS METODOS
+
 	/**
-	 * si tiene una resolución mayor de 40 pulgadas, se incrementara el precio un 30% y si tiene un 
-	 * sintonizador TDT incorporado, aumentara 50 €.Recuerda que las condiciones que hemos visto en 
-	 * la clase Electrodoméstico también deben afectar al precio.
+	 * Metodo retorna precio final de television, si tiene una resolución mayor de
+	 * 40 pulgadas, se incrementara el precio un 30% y si tiene un sintonizador TDT
+	 * incorporado, aumentara 50 €.
 	 */
 	public double precioFinal() {
-		return super.precioFinal();
+
+		double valorAdicionalTv = super.precioFinal();
+
+		if (pulgadas > 40) {
+			valorAdicionalTv = (valorAdicionalTv * 30 / 100) + valorAdicionalTv;
+		} else {
+			valorAdicionalTv = super.precioFinal();
+		}
+
+		if (sintonizadorTDT = true) {
+			valorAdicionalTv = valorAdicionalTv + 50;
+		} else {
+			valorAdicionalTv = super.precioFinal();
+		}
+
+		return valorAdicionalTv;
 	}
 
+	/**
+	 * Metodo toString
+	 * 
+	 * @return informacion de los atributos de televisores
+	 */
 	@Override
 	public String toString() {
 		return super.toString() + "Television [pulgadas=" + pulgadas + ", sintonizadorTDT=" + sintonizadorTDT + "]";
 	}
-	
-	
 
 }

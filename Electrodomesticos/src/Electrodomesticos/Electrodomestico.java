@@ -1,9 +1,9 @@
 package Electrodomesticos;
 
 /**
- * Clase que define los atributos principales
+ * Clase que define los atributos principales de los electrodomesticos
  * 
- * @author Alumno
+ * @author Andrea Carreño
  * @version 1.0
  */
 public class Electrodomestico {
@@ -65,32 +65,36 @@ public class Electrodomestico {
 	// METODOS GETTERS
 
 	/**
+	 * Metodo retorna precio base del electrodomestico
 	 * 
-	 * @return
+	 * @return precio base de electrodomestico
 	 */
 	public double getPrecioBase() {
 		return precioBase;
 	}
 
 	/**
+	 * Metodo retorna color del electrodomestico
 	 * 
-	 * @return
+	 * @return color del electrodomestico
 	 */
 	protected String getColor() {
 		return color;
 	}
 
 	/**
+	 * Metodo retorna consumo energetico del electrodomestico
 	 * 
-	 * @return
+	 * @return consumo energetico del electrodomestico
 	 */
 	public char getConsumoEnergetico() {
 		return consumoEnergetico;
 	}
 
 	/**
+	 * Metodo retorna el peso del electrodomestico
 	 * 
-	 * @return
+	 * @return peso de electrodomestico
 	 */
 	public double getPeso() {
 		return peso;
@@ -100,11 +104,13 @@ public class Electrodomestico {
 
 	/**
 	 * Comprueba que la letra es correcta, sino es correcta usara la letra por
-	 * defecto.
+	 * defecto
 	 * 
 	 * @param letra
 	 * @return
 	 */
+
+	@SuppressWarnings("unused")
 	private void comprobarConsumoEnergetico(char letra) {
 		this.consumoEnergetico = letra;
 
@@ -152,7 +158,9 @@ public class Electrodomestico {
 	}
 
 	/**
-	 * según el consumo energético, aumentara su precio, y según su tamaño también.
+	 * Metodo retorna aumento de precio según el consumo energético y tamaño
+	 * 
+	 * @return la suma del precio base con el valor adicional del electrodomestico
 	 */
 	public double precioFinal() {
 		double valorAdicional = 0;
@@ -192,6 +200,11 @@ public class Electrodomestico {
 		return valorAdicional + precioBase;
 	}
 
+	/**
+	 * Metodo toString
+	 * 
+	 * @return informacion de los atributos de electrodomesticos
+	 */
 	@Override
 	public String toString() {
 		return "Electrodomestico [precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico="
