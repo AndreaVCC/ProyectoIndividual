@@ -1,4 +1,4 @@
-# Electrodomesticos :video_game:
+# Electrodomesticos
 
 Proyecto individual, Listado de elctrodomesticos.
 
