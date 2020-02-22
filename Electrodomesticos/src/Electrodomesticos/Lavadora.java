@@ -28,8 +28,8 @@ public class Lavadora extends Electrodomestico {
 	/**
 	 * Constrcutor con parametro preciobase y peso
 	 * 
-	 * @param precioBase
-	 * @param peso
+	 * @param precioBase Precio base de lavadora
+	 * @param peso Peso de lavadora
 	 */
 	public Lavadora(double precioBase, double peso) {
 		super(precioBase, peso);
@@ -39,11 +39,11 @@ public class Lavadora extends Electrodomestico {
 	/**
 	 * Constructor con todos los parametros
 	 * 
-	 * @param precioBase
-	 * @param color
-	 * @param consumoEnergetico
-	 * @param peso
-	 * @param carga
+	 * @param precioBase Precio base de lavadora
+	 * @param color Color de lavadora
+	 * @param consumoEnergetico Consumo energetico de lavadora
+	 * @param peso Peso de lavadora
+	 * @param carga Carga de lavadora
 	 */
 	public Lavadora(double precioBase, String color, char consumoEnergetico, double peso, int carga) {
 		super(precioBase, color, consumoEnergetico, peso);
@@ -64,7 +64,7 @@ public class Lavadora extends Electrodomestico {
 	/**
 	 * Metodo define la carga de las lavadoras
 	 * 
-	 * @param carga
+	 * @param carga de lavadoras
 	 */
 	public void setCarga(int carga) {
 		this.carga = carga;

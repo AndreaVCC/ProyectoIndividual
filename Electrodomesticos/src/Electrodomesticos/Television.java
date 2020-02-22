@@ -33,8 +33,8 @@ public class Television extends Electrodomestico {
 	/**
 	 * Constructor con dos parametros
 	 * 
-	 * @param precioBase
-	 * @param peso
+	 * @param precioBase Precio base de Television
+	 * @param peso Peso de Television
 	 */
 	public Television(double precioBase, double peso) {
 		super(precioBase, peso);
@@ -44,12 +44,12 @@ public class Television extends Electrodomestico {
 
 	/**
 	 * 
-	 * @param precioBase
-	 * @param color
-	 * @param consumoEnergetico
-	 * @param peso
-	 * @param pulgadas
-	 * @param sintonizadorTDT
+	 * @param precioBase Precio base de Television
+	 * @param color Color de Television
+	 * @param consumoEnergetico Consumo energetico de Television
+	 * @param peso Peso de Television
+	 * @param pulgadas Pulgadas de Television
+	 * @param sintonizadorTDT SintonizadorTDT de Television
 	 */
 	public Television(double precioBase, String color, char consumoEnergetico, double peso, int pulgadas,
 			boolean sintonizadorTDT) {
@@ -72,7 +72,7 @@ public class Television extends Electrodomestico {
 	/**
 	 * Metodo retorna true o false en caso de que posea o no sintonizadorTDT
 	 * 
-	 * @return sintonizadorTDT
+	 * @return estado de sintonizadorTDT
 	 */
 	public boolean getSintonizadorTDT() {
 		return sintonizadorTDT;

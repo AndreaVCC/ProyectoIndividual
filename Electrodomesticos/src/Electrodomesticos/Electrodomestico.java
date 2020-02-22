@@ -37,8 +37,8 @@ public class Electrodomestico {
 	/**
 	 * Constructor con dos parametros
 	 * 
-	 * @param precioBase
-	 * @param peso
+	 * @param precioBase Precio base de Electrodomestico
+	 * @param peso Peso de Electrodomestico
 	 */
 	public Electrodomestico(double precioBase, double peso) {
 		this.precioBase = precioBase;
@@ -50,10 +50,10 @@ public class Electrodomestico {
 	/**
 	 * Constructor con todos lo atributos
 	 * 
-	 * @param precioBase
-	 * @param color
-	 * @param consumoEnergetico
-	 * @param peso
+	 * @param precioBase Precio base de Electrodomestico
+	 * @param color Color de Electrodomestico
+	 * @param consumoEnergetico Consumo energetico de Electrodomestico
+	 * @param peso Peso de Electrodomestico
 	 */
 	public Electrodomestico(double precioBase, String color, char consumoEnergetico, double peso) {
 		this.precioBase = precioBase;
@@ -106,8 +106,8 @@ public class Electrodomestico {
 	 * Comprueba que la letra es correcta, sino es correcta usara la letra por
 	 * defecto
 	 * 
-	 * @param letra
-	 * @return
+	 * @param letra del consumo energetico
+	 * @return la letra del consumo energetico
 	 */
 
 	@SuppressWarnings("unused")
@@ -141,7 +141,7 @@ public class Electrodomestico {
 	/**
 	 * Comprueba que el color es correcto, sino lo es usa el color por defecto
 	 * 
-	 * @param color
+	 * @param color del electrodomestico
 	 */
 	public void comprobarColor(String color) {
 
