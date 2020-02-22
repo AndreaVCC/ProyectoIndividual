@@ -81,8 +81,8 @@ public class Television extends Electrodomestico {
 	 * sintonizador TDT incorporado, aumentara 50 €.Recuerda que las condiciones que hemos visto en 
 	 * la clase Electrodoméstico también deben afectar al precio.
 	 */
-	public void precioFinal() {
-		
+	public double precioFinal() {
+		return super.precioFinal();
 	}
 
 	@Override
